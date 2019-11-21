@@ -67,7 +67,7 @@ def stockQuote(ticker,token):
     elif r.status_code == 404:
         replyString = "Stonk not found :-("
     else:
-        replyString = "You retard! response={}".format(r.status_code)
+        replyString = "Bad Request! response={}".format(r.status_code)
     return replyString
 
 def peers(ticker,token):
